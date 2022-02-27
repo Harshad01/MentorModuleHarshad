@@ -1,0 +1,54 @@
+.head{
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+
+form{
+  /* width: 800px; */
+  margin: auto;
+  padding: 1.5%;
+}
+
+.container{
+  margin-top: 25px;
+ 
+}
+
+.row{
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 700px){
+  .bd-example{
+    
+    max-width: auto;
+  }
+} 
+
+
+.bd-example{
+  max-width: 800px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5%;
+  padding-bottom: 2%;
+}
+
+.employee{
+  background-color: lightgray;
+  height: 35px;
+  
+}
+
+#Emp{
+  margin-left: 10px;
+  margin-top: 10px;
+}

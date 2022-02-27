@@ -1,0 +1,39 @@
+.bd-example{
+  max-width: 450px;
+  margin: auto;
+  
+  
+}
+form{
+  /* max-width: 800px; */
+  margin: auto;
+  padding: 1.5%;
+}
+
+.Login{
+  
+  height: 35px;
+  
+}
+
+#log{
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 700px){
+  .bd-example{
+    
+    max-width: auto;
+  }
+
+  form{
+    max-width: auto;
+  }
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+  box-shadow: 0 0 13px inset rgba(255, 0, 0, 0.09);
+}

@@ -1,0 +1,27 @@
+
+<div class="bd-example bg-white rounded shadow border border-bottom">
+  <div class="alert alert-danger" *ngIf="alertStatus" role="alert">
+    Incorrect Username or Password
+  </div>
+  <div class="Login bg-light border border-bottom">
+    <span id="log">Login</span></div>
+  <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+    <div class="container">
+      <div class="row ">
+        <div class="col">
+          <div class="form-group">
+            <label for="Username">Username:</label>
+            <input type="text" name="Username" class="form-control" ngModel required>
+            <label for="Email" class="mt-2">Email:</label>
+            <input type="email" name="email" class="form-control" ngModel required email #email="ngModel">
+            <small class="text-danger" *ngIf="!email.valid && email.touched">Plese Enter Valid Email</small>
+          </div>
+            <button [disabled]='!myForm.valid' class="btn btn-primary mb-1">Submit</button>
+          
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
