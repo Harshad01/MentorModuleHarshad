@@ -4,13 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { LoginstateService } from './loginstate.service';
+import { LoginstateService } from './Services/loginstate.service';
 import { EmpolyeeDirectoryComponent } from './empolyee-directory/empolyee-directory.component';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { DatePipe } from '@angular/common';
 import { BsDatepickerModule, BsDatepickerConfig  } from 'ngx-bootstrap/datepicker';
-import { EmployeeDataService } from './employee-data.service';
+import { EmployeeDataService } from './Services/employee-data.service';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
+
 
 
 const appRoutes: Routes=[
@@ -24,7 +29,9 @@ const appRoutes: Routes=[
     AppComponent,
     LoginComponent,
     EmpolyeeDirectoryComponent,
-    EmployeeFormComponent
+    EmployeeFormComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -32,6 +39,7 @@ const appRoutes: Routes=[
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
+    HttpClientModule
     
     
   ],

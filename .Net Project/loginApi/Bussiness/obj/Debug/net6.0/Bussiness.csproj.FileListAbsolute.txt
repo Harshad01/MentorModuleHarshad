@@ -1,0 +1,15 @@
+E:\.Net Projects\loginApi\Bussiness\bin\Debug\net6.0\Bussiness.deps.json
+E:\.Net Projects\loginApi\Bussiness\bin\Debug\net6.0\Bussiness.dll
+E:\.Net Projects\loginApi\Bussiness\bin\Debug\net6.0\Bussiness.pdb
+E:\.Net Projects\loginApi\Bussiness\bin\Debug\net6.0\Common.dll
+E:\.Net Projects\loginApi\Bussiness\bin\Debug\net6.0\Common.pdb
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\Bussiness.csproj.AssemblyReference.cache
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\Bussiness.GeneratedMSBuildEditorConfig.editorconfig
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\Bussiness.AssemblyInfoInputs.cache
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\Bussiness.AssemblyInfo.cs
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\Bussiness.csproj.CoreCompileInputs.cache
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\Bussiness.csproj.CopyComplete
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\Bussiness.dll
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\refint\Bussiness.dll
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\Bussiness.pdb
+E:\.Net Projects\loginApi\Bussiness\obj\Debug\net6.0\ref\Bussiness.dll

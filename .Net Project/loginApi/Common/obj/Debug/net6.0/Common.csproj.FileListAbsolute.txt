@@ -1,0 +1,12 @@
+E:\.Net Projects\loginApi\Common\bin\Debug\net6.0\Common.deps.json
+E:\.Net Projects\loginApi\Common\bin\Debug\net6.0\Common.dll
+E:\.Net Projects\loginApi\Common\bin\Debug\net6.0\Common.pdb
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\Common.dll
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\refint\Common.dll
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\Common.pdb
+E:\.Net Projects\loginApi\Common\obj\Debug\net6.0\ref\Common.dll

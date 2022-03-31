@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LoginstateService } from '../loginstate.service';
+import { HttpClient } from '@angular/common/http'
+import { LoginstateService } from '../Services/loginstate.service';
+import { user } from './user.model';
 
 @Component({
   selector: 'app-login',
@@ -9,41 +11,35 @@ import { LoginstateService } from '../loginstate.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  url='https://localhost:7066/api/Login/LoginManager';
   alertStatus: boolean =false;
   isValid: boolean = false;
-  userNameLogin: string = '';
-  emaiLlogin ='';
-  userNameDetail: string ='';
-  emailDetail:string='';
-
-  constructor(private _loginstate:LoginstateService, private router: Router) { }
+  constructor(private _loginstate:LoginstateService, private router: Router,private http:HttpClient) { }
 
   ngOnInit(): void {
   }
 
+  onCheckLogin(userData:user){
+    this.http.post<user>(this.url,userData,{ observe: 'response' }).subscribe(
+      (res)=> {
+        if (res.status == 200){
+          this.router.navigate(['Directory']);
+          this._loginstate.status(true);
+        }
+        else if(res.status == 400){
+          console.log("There was a problem login In");
+        }
+      }
+    )
+  }
+
   
 
-  onSubmit(form: NgForm){
-    this.userNameLogin = 'Harshad';
-    this.emaiLlogin ='harshadnehate30@gmail.com';
-    this.userNameDetail=form.value.Username;
-    this.emailDetail=form.value.email;
-    console.log(this.userNameDetail);
-    console.log(this.emailDetail);
-    if(this.userNameLogin != this.userNameDetail || this.emaiLlogin != this.emailDetail){
-      this.alertStatus=true;
-    }
-    
-    else if(this.userNameLogin === this.userNameDetail || this.emaiLlogin === this.emailDetail){
-      this.isValid=true;
-      this._loginstate.status(true)
-      this.router.navigate(['Directory']);
-      console.log(this._loginstate.isLogin())
-    }
+ 
     
     
 }
 
 
 
-}
+
